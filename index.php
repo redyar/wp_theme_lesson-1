@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Натяжка вёрстки на WordPress</title>
+  <title><?php echo wp_get_document_title() ?></title>
 
   <meta charset="utf-8">
   <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="css/responsive.css" />
   <link rel="stylesheet" href="css/spacings.css" />
   <link rel="stylesheet" href="css/animate.min.css" />
-
+<?php wp_head(); ?>
 </head>
 
 <body class="relative">
@@ -502,6 +502,6 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/plugins.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
-
+<?php wp_footer(); ?>
 </body>
 </html>
