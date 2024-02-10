@@ -3,7 +3,7 @@
 <head>
   <title><?php echo wp_get_document_title() ?></title>
 
-  <meta charset="utf-8">
+  <meta charset="<?php bloginfo('charset') ?>">
   <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="">
@@ -485,7 +485,7 @@
             <div class="row">
               <div class="col-sm-12 copyright text-center">
                 <span>
-                  © 2020 Курс Миши Рудрастых
+                  © <?php echo date('Y') ?> <?php bloginfo('name') ?> - <?php bloginfo('description') ?>
                 </span>
               </div>
 
