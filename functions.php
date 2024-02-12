@@ -12,10 +12,13 @@ function lesson_scripts(){
 	wp_enqueue_style('responsive', get_template_directory_uri() . '/assets/css/responsive.css', array(), time());
 	wp_enqueue_style('spacings', get_template_directory_uri() . '/assets/css/spacings.css', array(), time());
 	wp_enqueue_style('animate.min', get_template_directory_uri() . '/assets/css/animate.min.css', array(), time());
+	wp_enqueue_style('gfonts', 'http://fonts.googleapis.com/css?family=Montserrat:300,400%7COpen+Sans:400,400i,700%7CMerriweather:400ii?subset=cyrillic', array(), time());
 
 	//scripts
-	wp_enqueue_script('jquery.min', get_template_directory_uri() . '/assets/js/jquery.min.js', array(), time(), true);
-	wp_enqueue_script('bootstrap.min.js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), time(), true);
-	wp_enqueue_script('plugins', get_template_directory_uri() . '/assets/js/plugins.js', array(), time(), true);
-	wp_enqueue_script('scripts', get_template_directory_uri() . '/assets/js/scripts.js', array(), time(), true);
+	wp_deregister_script( 'jquery' );
+	wp_register_script( 'jquery', get_template_directory_uri() . '/assets/js/jquery.min.js', array(), null, true );
+	wp_enqueue_script( 'jquery' );
+	wp_enqueue_script('bootstrap.min.js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), time(), true);
+	wp_enqueue_script('plugins', get_template_directory_uri() . '/assets/js/plugins.js', array('jquery'), time(), true);
+	wp_enqueue_script('scripts', get_template_directory_uri() . '/assets/js/scripts.js', array('jquery'), time(), true);
 }

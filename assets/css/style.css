@@ -920,6 +920,7 @@ blockquote > span {
 }
 
 .navbar {
+  top: 32px;
   margin-bottom: 0;
   border: none;
   min-height: 60px;
