@@ -11,14 +11,7 @@
   <!-- Google Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Montserrat:300,400%7COpen+Sans:400,400i,700%7CMerriweather:400ii?subset=cyrillic' rel='stylesheet'>
 
-  <!-- Css -->
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/font-icons.css" />
-  <link rel="stylesheet" href="css/sliders.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
-  <link rel="stylesheet" href="css/spacings.css" />
-  <link rel="stylesheet" href="css/animate.min.css" />
+
 <?php wp_head(); ?>
 </head>
 
