@@ -28,7 +28,6 @@
   <div class="main-wrapper oh">
 
     <header class="nav-type-1 dark-nav">
-
       <!-- Fullscreen search -->
       <div class="search-wrap">
         <div class="search-inner">
@@ -489,12 +488,6 @@
 
     </div> <!-- end content wrapper -->
   </div> <!-- end main wrapper -->
-
-  <!-- jQuery Scripts -->
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/plugins.js"></script>
-  <script type="text/javascript" src="js/scripts.js"></script>
 <?php wp_footer(); ?>
 </body>
 </html>
