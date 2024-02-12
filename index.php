@@ -11,7 +11,7 @@
   <!-- Google Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Montserrat:300,400%7COpen+Sans:400,400i,700%7CMerriweather:400ii?subset=cyrillic' rel='stylesheet'>
 
-
+  
 <?php wp_head(); ?>
 </head>
 
