@@ -22,3 +22,8 @@ function lesson_scripts(){
 	wp_enqueue_script('plugins', get_template_directory_uri() . '/assets/js/plugins.js', array('jquery'), time(), true);
 	wp_enqueue_script('scripts', get_template_directory_uri() . '/assets/js/scripts.js', array('jquery'), time(), true);
 }
+
+register_nav_menus(array(
+	'header' => 'header_menu',
+	'footer' => 'footer_menu'
+));
