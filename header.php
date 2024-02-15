@@ -63,7 +63,7 @@
               <!-- side menu -->
               <div class="side-menu nav-left hidden-sm hidden-xs">
 								<div class="nav-inner">
-                    <a href="/" class="logo">Курс Миши</a>
+                    <a href="/" class="logo">Курс Мыши</a>
                 </div>
               </div> <!-- end side menu -->
 
