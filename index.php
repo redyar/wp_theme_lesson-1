@@ -70,7 +70,7 @@
               <div class="col-md-12 nav-wrap">
                 <div class="collapse navbar-collapse text-center" id="navbar-collapse">
 
-                  <ul class="nav navbar-nav">
+                  <!-- <ul class="nav navbar-nav">
 
                     <li class="active">
                       <a href="index.html">Главная</a>
@@ -104,7 +104,29 @@
                       </form>
                     </li>
 
-                  </ul> <!-- end menu -->
+                  </ul> end menu -->
+
+                  <?php
+                  if(has_nav_menu('header')){
+                    $mobile_search = '      <li id="mobile-search" class="hidden-lg hidden-md">
+                                              <form method="get" class="mobile-search">
+                                                <input type="search" class="form-control" placeholder="Search...">
+                                                <button type="submit" class="search-button">
+                                                  <i class="icon icon_search"></i>
+                                                </button>
+                                              </form>
+                                            </li>';
+                      wp_nav_menu(array(
+                        'theme_location' => 'header',
+                        'container'      => false,
+                        'menu_class'     => 'nav navbar-nav',
+                        'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s' . $mobile_search . '</ul>',
+                        'depth'          => 2,
+                      
+                      ));
+                    }
+                  ?>
+
                 </div> <!-- end collapse -->
               </div> <!-- end col -->
 
