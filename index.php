@@ -122,6 +122,7 @@
                         'menu_class'     => 'nav navbar-nav',
                         'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s' . $mobile_search . '</ul>',
                         'depth'          => 2,
+                        'walker'         => new Lesson_Nav_Menu(), 
                       
                       ));
                     }
