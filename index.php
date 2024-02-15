@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-    <div class="content-wrapper oh">
-
       <!-- Content -->
       <section class="content blog-standard">
         <div class="container relative">
