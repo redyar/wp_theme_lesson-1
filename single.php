@@ -10,7 +10,7 @@
 
         <!-- large post -->
         <article class="entry-item large-post">
-          <h1>POST</h1>
+          <h1>Single POST</h1>
           <div class="entry-header">
             <div  class="entry-category"><?php the_category(', '); ?></div>
             
@@ -26,14 +26,7 @@
 
               <div class="entry-content">
                 <div class="article">
-                  <p><span class="dropcap style-1">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque ornare aenean euismod elementum nisi. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit. Consectetur lorem donec massa sapien faucibus et molestie ac.</p>
-
-                  <blockquote>
-                    <p>
-                      Всё, что мы есть – это результат наших мыслей.
-                    </p>
-                    <span>Будда</span>
-                  </blockquote>
+                  <p><span class="dropcap style-1">L</span><?php the_content(); ?></p>
 
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque ornare aenean euismod elementum nisi. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit. Consectetur lorem donec massa sapien faucibus et molestie ac.</p>
 
