@@ -12,7 +12,7 @@
         <article class="entry-item large-post">
           <h1>Single POST</h1>
           <div class="entry-header">
-            <div  class="entry-category"><?php the_category(', '); ?></div>
+            <div  class="entry-category"><?php the_category(',  '); ?></div>
             
             <h1 class="entry-title"><?php the_title(); ?></h1>
           </div>
@@ -58,10 +58,7 @@
 
                 <!-- tags -->
                 <div class="entry-tags tags mb-50 mt-40 clearfix">
-                  <a href="#">Стрит</a>
-                  <a href="#">Адаптив</a>
-                  <a href="#">Интернет-коммерация</a>
-                  <a href="#">Влог</a>
+                  <?php the_tags( ' ', ' ' ); ?>
                 </div>
 
                 <div class="entry-meta-wrap clearfix">
