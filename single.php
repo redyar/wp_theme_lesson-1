@@ -58,13 +58,13 @@
 
                 <!-- tags -->
                 <div class="entry-tags tags mb-50 mt-40 clearfix">
-                  <?php the_tags( ' ', ' ' ); ?>
+                  <?php the_tags( '', '' ); // Первым параметром идёт слово Tags?> 
                 </div>
 
                 <div class="entry-meta-wrap clearfix">
                   <ul class="entry-meta">
                     <li class="entry-date">
-                      <a href="#">20 января 2020</a>
+                      <?php the_time('j M Y') ?>
                     </li>
                     <li class="entry-comments">
                       <a href="blog-single.html">2 комментария</a>
