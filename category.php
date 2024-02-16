@@ -9,9 +9,8 @@
 
               <!-- category description -->
 							<div class="category-description">
-								<h1>Лайфстайл CAtegories</h1>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet nec ullamcorper sit amet risus. Posuere lorem ipsum dolor sit amet consectetur adipiscing. Diam sit amet nisl suscipit adipiscing bibendum est...
-								</p>
+								<h1><?php single_cat_title(); ?></h1>
+								<p><?php echo category_description(); ?></p>
 							</div>
 
 
@@ -27,9 +26,9 @@
                           </a>
                         </div>
                         <div class="entry-header">
-                          <a href="#" class="entry-category">Лайфстайл</a>
+                        <div  class="entry-category"><?php the_category(',  '); ?></div>
                           <h2 class="entry-title">
-                            <a href="blog-single.html"><?php the_title(); ?></a>
+                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                           </h2>
                         </div>
                         <div class="entry-wrap">
