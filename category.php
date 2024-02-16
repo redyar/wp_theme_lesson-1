@@ -10,7 +10,7 @@
               <!-- category description -->
 							<div class="category-description">
 								<h1><?php single_cat_title(); ?></h1>
-								<p><?php echo category_description(); ?></p>
+								<?php echo category_description(); ?>
 							</div>
 
 
