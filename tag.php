@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
       <!-- Content -->
       <section class="content blog-standard">
         <div class="container relative">
@@ -8,25 +7,24 @@
             <!-- post content -->
             <div class="col-md-9 post-content mb-50">
 
-              <!-- large post -->
-              <article class="entry-item large-post">
-                <?php
-                $i = 0;
- 
-                while( have_posts() ) : the_post();
-                  $i++;
-                  if( 1 === $i ) {
-                    // если первая запись, то подключаем файл entry-featured.php
-                    get_template_part( 'template_parts/main', 'post' );
-                  } else {
-                    // иначе подключаем обычный entry.php
-                    get_template_part( 'template_parts/post', 'content' );
-                  }
-                 
-                endwhile;
-                ?>
-              </article> <!-- end large post -->
+              <!-- category description -->
+							<div class="category-description">
+								<h1><?php single_tag_title(); ?></h1>
+								<?php echo tag_description(); ?>
+							</div>
 
+
+              <!-- grid posts -->
+              <?php if( have_posts() ) : ?>
+                <div class="row items-grid">
+                  <?php while( have_posts() ) : the_post(); ?>
+                    <?php get_template_part('template_parts/post', 'content') ?>
+                  <?php endwhile; ?>
+                </div> 
+              <?php else: ?>
+                <p>Empty Tag!</p> 
+              <?php endif; ?>
+              <!-- end grid posts -->
 
               <div class="row mt-20">
                 <div class="col-md-12 text-center pagination">
@@ -45,11 +43,11 @@
 
             </div> <!-- end col -->
 
+            <!-- Sidebar -->
             <?php get_sidebar(); ?>
+            <!-- end sidebar -->
 
           </div> <!-- end row -->
         </div> <!-- end container -->
       </section> <!-- end content -->
-
-
 <?php get_footer(); ?>
