@@ -12,7 +12,7 @@
               <article class="entry-item large-post">
 
                 <div class="entry-header">
-                  <a href="#" class="entry-category">Лайфстайл</a>
+                  <a href="#" class="entry-category">Лайфстайл MAIN</a>
                   <h2 class="entry-title">
                     <a href="blog-single.html">Зимовка на Бали</a>
                   </h2>

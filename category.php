@@ -9,7 +9,7 @@
 
               <!-- category description -->
 							<div class="category-description">
-								<h1>Лайфстайл</h1>
+								<h1>Лайфстайл CAtegories</h1>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet nec ullamcorper sit amet risus. Posuere lorem ipsum dolor sit amet consectetur adipiscing. Diam sit amet nisl suscipit adipiscing bibendum est...
 								</p>
 							</div>

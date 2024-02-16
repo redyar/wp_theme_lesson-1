@@ -3,7 +3,7 @@
       <section class="section-wrap contact pt-mdm-60">
         <div class="container relative">
           <div class="text-center">
-            <h1 class="heading underline-title uppercase">Пример страницы</h1>
+            <h1 class="heading underline-title uppercase">Пример страницы ABOUT</h1>
           </div>
           <div class="row">
 

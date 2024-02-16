@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header(); the_post();?>
 
 <!-- Content -->
 <section class="content post-single pt-70 pt-mdm-60">
@@ -10,10 +10,11 @@
 
         <!-- large post -->
         <article class="entry-item large-post">
-
+          <h1>POST</h1>
           <div class="entry-header">
-            <a href="#" class="entry-category">Лайфстайл</a>
-            <h1 class="entry-title">Зимовка на Бали</h1>
+            <div  class="entry-category"><?php the_category(', '); ?></div>
+            
+            <h1 class="entry-title"><?php the_title(); ?></h1>
           </div>
 
           <div class="entry-img">
