@@ -69,48 +69,11 @@
 
               <div class="col-md-12 nav-wrap">
                 <div class="collapse navbar-collapse text-center" id="navbar-collapse">
-
-                  <!-- <ul class="nav navbar-nav">
-
-                    <li class="active">
-                      <a href="index.html">Главная</a>
-                    </li>
-
-                    <li class="dropdown">
-                      <a href="index.html">Блог</a>
-                      <ul class="dropdown-menu">
-                        <li><a href="category.html">Лайфстайл</a></li>
-                        <li><a href="category.html">Трэвел</a></li>
-                        <li><a href="category.html">Бьюти</a></li>
-                        <li><a href="category.html">Ворк хард</a></li>
-												<li><a href="category.html">Еда</a></li>
-                      </ul>
-                    </li>
-
-                    <li>
-                      <a href="about.html">Обо мне</a>
-                    </li>
-
-                    <li>
-                      <a href="contact.html">Контакты</a>
-                    </li>
-
-                    <li id="mobile-search" class="hidden-lg hidden-md">
-                      <form method="get" class="mobile-search">
-                        <input type="search" class="form-control" placeholder="Search...">
-                        <button type="submit" class="search-button">
-                          <i class="icon icon_search"></i>
-                        </button>
-                      </form>
-                    </li>
-
-                  </ul> end menu -->
-
                   <?php
                   if(has_nav_menu('header')){
                     $mobile_search = '      <li id="mobile-search" class="hidden-lg hidden-md">
-                                              <form method="get" class="mobile-search">
-                                                <input type="search" class="form-control" placeholder="Search...">
+                                              <form method="get" action="<?php echo site_url(); ?>" class="mobile-search" >
+                                                <input type="search" name="s" class="form-control" placeholder="Search...">
                                                 <button type="submit" class="search-button">
                                                   <i class="icon icon_search"></i>
                                                 </button>
