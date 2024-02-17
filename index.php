@@ -11,29 +11,24 @@
               <!-- large post -->
               <article class="entry-item large-post">
                 <?php
-                // $i = 0;
+                $count = 1;
  
                 while( have_posts() ) : the_post();
                   
                 if(is_sticky()){
                   get_template_part( 'template_parts/main', 'post' );
                 }else{
+                  if( $count == 1 ) {
+                    echo '<div class="row items-grid">';
+                  }
                   get_template_part( 'template_parts/post', 'content' );
+                  $count++;
                 }
-
-
-
-                //   $i++;
-                //   if( !is_paged() && 1 === $i ) {
-                //     // если первая запись, то подключаем файл entry-featured.php
-                //     get_template_part( 'template_parts/main', 'post' );
-                //   } else {
-                //     // иначе подключаем обычный entry.php
-                //     get_template_part( 'template_parts/post', 'content' );
-                //   }
                  
                 endwhile;
-                
+                if( $count > 1 ) {
+                  echo '</div>';
+                }
                 ?>
               </article> <!-- end large post -->
               
