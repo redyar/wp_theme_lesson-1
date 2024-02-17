@@ -30,7 +30,12 @@
               
               <div class="row mt-20">
                 <div class="col-md-12 text-center pagination">
-                <?php echo paginate_links( array('prev_next' => false) );?>
+                <?php echo paginate_links( array(
+                  'prev_next' => true,
+                  'prev_text' => '<i class="icon arrow_carrot-left"></i>',
+                  'next_text' => '<i class="icon arrow_carrot-right"></i>'
+                  
+                  ) );?>
                   <!-- <a href="#" class=""><i class="icon arrow_carrot-left"></i></a>
 									<a href="#" class="">2</a>
 									<a href="#" class="">3</a>
