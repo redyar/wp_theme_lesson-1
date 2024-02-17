@@ -32,9 +32,9 @@
       <div class="search-wrap">
         <div class="search-inner">
           <div class="search-cell">
-            <form method="get">
+            <form method="get" action="<?php echo site_url(); ?>">
               <div class="search-field-holder">
-                <input type="search" class="form-control main-search-input" placeholder="Найти что-то...">
+                <input type="search" name="s" class="form-control main-search-input" placeholder="Найти что-то...">
                 <div class="search-submit-icon"><i class="icon icon_search"></i></div>
                 <input type="submit" class="search-submit" value="search">
               </div>
