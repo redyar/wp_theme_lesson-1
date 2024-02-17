@@ -27,7 +27,6 @@
                 ?>
               </article> <!-- end large post -->
 
-
               <div class="row mt-20">
                 <div class="col-md-12 text-center pagination">
                   <a href="#" class=""><i class="icon arrow_carrot-left"></i></a>
