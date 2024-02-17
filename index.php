@@ -7,7 +7,11 @@
 
             <!-- post content -->
             <div class="col-md-9 post-content mb-50">
-
+              <?php if( is_search() ) : ?>
+                <div class="category-description">
+                  <h1>Results search: &laquo; <?php the_search_query(); ?> &raquo;</h1>
+                </div>
+              <?php endif; ?>  
               <!-- large post -->
               <article class="entry-item large-post">
                 <?php
