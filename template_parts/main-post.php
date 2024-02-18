@@ -1,4 +1,4 @@
-
+<article <?php post_class('entry-item large-post') ?>>
     <div class="entry-header">
     <div  class="entry-category"><?php the_category(',  '); ?></div>
         <h2 class="entry-title">
@@ -37,3 +37,4 @@
 
         </div>
     </div>
+</article> <!-- end large post -->

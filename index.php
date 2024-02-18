@@ -13,27 +13,37 @@
                 </div>
               <?php endif; ?>  
               <!-- large post -->
-              <article class="entry-item large-post">
+              
                 <?php
                 $count = 1;
                 
                 while( have_posts() ) : the_post();
+                  if(is_sticky()){
+                    get_template_part( 'template_parts/main', 'post' );
+                  }else{
+                    if ( $count == 1 ){
+                      echo '<div class="row items-grid">';
+                    }
+                    get_template_part( 'template_parts/post', 'content' );
+                    $count++;
+                  }
+                // if( is_sticky() && !is_paged()){
+                //   get_template_part( 'template_parts/main', 'post' );
+                //   echo '<div class="row items-grid">';
                   
-                if( !is_paged() && 1 === $count){
-                  get_template_part( 'template_parts/main', 'post' );
-                  echo '<div class="row items-grid">';
+                // }else{
                   
-                }else{
-     
-                  get_template_part( 'template_parts/post', 'content' );
+                //   get_template_part( 'template_parts/post', 'content' );
                   
-                }
+                // }
                 $count++;
                 
                 endwhile;
-                echo '</div>';
+                if( $count > 1 ){
+                  echo '</div>';
+                } 
                 ?>
-              </article> <!-- end large post -->
+              
               
               <div class="row mt-20">
                 <div class="col-md-12 text-center pagination">
@@ -45,7 +55,7 @@
                   ) );?>
                 </div>
               </div>
-
+              <?php endif; ?>
 
             </div> <!-- end col -->
 
