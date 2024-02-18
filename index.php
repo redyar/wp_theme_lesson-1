@@ -13,19 +13,20 @@
                 </div>
               <?php endif; ?>  
               <!-- large post -->
-              
+              <?php if( have_posts() ) : ?>
                 <?php
                 $count = 1;
                 
                 while( have_posts() ) : the_post();
                   if(is_sticky()){
-                    get_template_part( 'template_parts/main', 'post' );
+                    get_template_part( 'template_parts/main', 'post' );   
+                    echo '<div class="row items-grid">';
                   }else{
-                    if ( $count == 1 ){
-                      echo '<div class="row items-grid">';
-                    }
+                   
+                   
+                  
                     get_template_part( 'template_parts/post', 'content' );
-                    $count++;
+                     
                   }
                 // if( is_sticky() && !is_paged()){
                 //   get_template_part( 'template_parts/main', 'post' );
@@ -39,9 +40,9 @@
                 $count++;
                 
                 endwhile;
-                if( $count > 1 ){
+                
                   echo '</div>';
-                } 
+                 
                 ?>
               
               
