@@ -1,8 +1,9 @@
 <?php
+add_theme_support( 'post-thumbnails' );
+
+
 add_action('wp_enqueue_scripts', 'lesson_scripts');
 
-
- 
 function lesson_scripts(){
 	// styles
 	wp_enqueue_style('bootstrap.min', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), time());

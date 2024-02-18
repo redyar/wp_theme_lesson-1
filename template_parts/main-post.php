@@ -8,7 +8,7 @@
 
     <div class="entry-img">
         <a href="blog-single.html">
-        <img src="img/featured_post.jpg" alt="">
+        <?php the_post_thumbnail(); ?>
         </a>
     </div>
 

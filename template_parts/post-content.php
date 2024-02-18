@@ -2,7 +2,7 @@
   <article class="entry-item">
   <div class="entry-img">
 			<a href="<?php the_permalink() ?>">
-				<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/post_1.jpg" alt="">
+				<?php the_post_thumbnail(); ?>
 			</a>
 		</div>
     <div class="entry-header">
