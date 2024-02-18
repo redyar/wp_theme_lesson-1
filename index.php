@@ -16,23 +16,22 @@
               <article class="entry-item large-post">
                 <?php
                 $count = 1;
- 
+                
                 while( have_posts() ) : the_post();
                   
-                if(is_sticky()){
+                if( !is_paged() && 1 === $count){
                   get_template_part( 'template_parts/main', 'post' );
+                  echo '<div class="row items-grid">';
+                  
                 }else{
-                  if( $count == 1 ) {
-                    echo '<div class="row items-grid">';
-                  }
+     
                   get_template_part( 'template_parts/post', 'content' );
-                  $count++;
+                  
                 }
-                 
+                $count++;
+                
                 endwhile;
-                if( $count > 1 ) {
-                  echo '</div>';
-                }
+                echo '</div>';
                 ?>
               </article> <!-- end large post -->
               
