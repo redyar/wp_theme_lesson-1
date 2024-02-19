@@ -39,7 +39,7 @@
               <!-- Ad banner -->
               <div class="widget custom-ad-banner">
                 <a href="#">
-                  <img src="img/banner.jpg" alt="">
+                  <?php the_post_thumbnail('small-sidebar') ?>
                 </a>
               </div>
 
