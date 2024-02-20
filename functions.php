@@ -1,9 +1,4 @@
 <?php
-add_theme_support( 'post-thumbnails', array('post') );
-
-add_image_size('big-posts', 888, 578, true);
-add_image_size('small-sidebar', 88, 69, true);
-
 
 add_action('wp_enqueue_scripts', 'lesson_scripts');
 
@@ -31,5 +26,12 @@ register_nav_menus(array(
 	'header' => 'header_menu',
 	'footer' => 'footer_menu'
 ));
-
+// add nav menu class
 require get_template_directory() . '/classes/lesson-nav-menu.php';
+
+add_theme_support( 'post-thumbnails', array('post') );
+
+// add custome img size
+add_image_size('big-posts', 888, 578, true);
+add_image_size('small-sidebar', 88, 69, true);
+
