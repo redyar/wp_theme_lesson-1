@@ -28,15 +28,6 @@
                     get_template_part( 'template_parts/post', 'content' );
                      
                   }
-                // if( is_sticky() && !is_paged()){
-                //   get_template_part( 'template_parts/main', 'post' );
-                //   echo '<div class="row items-grid">';
-                  
-                // }else{
-                  
-                //   get_template_part( 'template_parts/post', 'content' );
-                  
-                // }
                 $count++;
                 
                 endwhile;
