@@ -18,7 +18,9 @@
           </div>
 
           <div class="entry-img">
-            <img src="img/featured_post.jpg" alt="">
+            <?php if ( has_post_thumbnail() ) : ?>
+              <?php the_post_thumbnail(); ?>
+            <?php endif; ?>  
           </div>
 
           <div class="entry-wrap">
