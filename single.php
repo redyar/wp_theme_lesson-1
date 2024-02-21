@@ -32,29 +32,6 @@
 
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque ornare aenean euismod elementum nisi. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit. Consectetur lorem donec massa sapien faucibus et molestie ac.</p>
 
-                                          <h2>Заголовок H2</h2>
-                  <h3>Заголовок H3</h3>
-                                          <h4>Заголовок H4</h4>
-                                          <h5>Заголовок H5</h5>
-
-                                          <p>Маркированный список</p>
-
-                                          <ul>
-                              <li>Элемент списка 1</li>
-                              <li>Элемент списка 2</li>
-                              <li>Элемент списка 3</li>
-                              <li>Элемент списка 4</li>
-                            </ul>
-
-                                          <p>Нумерованный список</p>
-
-                                          <ol>
-                                              <li>Элемент списка 1</li>
-                              <li>Элемент списка 2</li>
-                              <li>Элемент списка 3</li>
-                              <li>Элемент списка 4</li>
-                            </ol>
-
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque ornare aenean euismod elementum nisi. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit. Consectetur lorem donec massa sapien faucibus et molestie ac.</p>
                 </div>
 

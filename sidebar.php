@@ -37,11 +37,13 @@
               </div>
 
               <!-- Ad banner -->
+              <?php if ( has_post_thumbnail() ) : ?>
               <div class="widget custom-ad-banner">
                 <a href="#">
                   <?php the_post_thumbnail('small-sidebar') ?>
                 </a>
               </div>
+              <?php endif; ?>
 
               <!-- Recent Posts -->
               <div class="widget recent-posts">

@@ -18,7 +18,7 @@
         <div class="entry-content">
             <p><?php the_excerpt(); ?></p>
             <div class="text-center">
-            <a href="<?php the_permalink(); ?>" class="read-more underline-link">Читать далее</a>
+            <a href="<?php the_permalink(); ?>" class="read-more underline-link">Read more...</a>
             </div>
         </div>
 
@@ -28,7 +28,7 @@
                 <a href="#"><?php the_time('j M F'); ?></a>
             </li>
             <li class="entry-comments">
-                <a href="blog-single.html">5 комментариев</a>
+                <a href="blog-single.html">5 comments</a>
             </li>
             </ul>
 

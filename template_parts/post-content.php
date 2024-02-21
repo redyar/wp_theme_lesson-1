@@ -24,7 +24,7 @@
               <a href="#"><?php the_time('j M Y') ?></a>
             </li>
             <li class="entry-comments">
-              <a href="blog-single.html">5 комментариев</a>
+              <a href="blog-single.html">5 comments</a>
             </li>
           </ul>
         </div>
