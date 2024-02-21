@@ -31,7 +31,7 @@ require get_template_directory() . '/classes/lesson-nav-menu.php';
 
 add_theme_support( 'post-thumbnails', array('post') );
 
-// add custome img size
+// add custome img
 add_image_size('big-posts', 888, 578, true);
 add_image_size('small-sidebar', 88, 69, true);
 
