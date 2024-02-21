@@ -1,10 +1,12 @@
 <div class="col-sm-6">
   <article class="entry-item">
-  <div class="entry-img">
+    <?php if ( has_post_thumbnail() ) : ?>
+    <div class="entry-img">
 			<a href="<?php the_permalink() ?>">
 				<?php the_post_thumbnail(); ?>
 			</a>
 		</div>
+    <?php endif; ?>   
     <div class="entry-header">
     <div  class="entry-category"><?php the_category(',  '); ?></div>
       <h2 class="entry-title">
